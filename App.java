@@ -1,6 +1,6 @@
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello from Ivan!");
+        System.out.println("Hello from Iv!");
     }
 
     public static String greet(String name) {
