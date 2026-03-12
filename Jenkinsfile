@@ -23,11 +23,5 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
-            steps {
-                echo 'Deploying JAR to production...'
-                sh 'scp target/my-sample-app-1.0-SNAPSHOT.jar ubuntu@18.222.146.227:/apps/'    # Make sure to change here with the (user → the Linux user on your production server (e.g., ec2-user, ubuntu, devops). & production → can be IP address or DNS name of your production server. 
-            }
-        }
     }
 }
